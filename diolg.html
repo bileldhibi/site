@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dialog</title>
+    <meta name="twitter:card" content="summary_largr_image">
+    <meta name="twitter:title" content="bilel dhibi">
+    <meta name="twitter:description" content="bilel dhibi prof info">
+    <meta name="twitter:image" content="rayen.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <!--
+    <style>
+        ::-webkit-meter-bar{background: rgb(94, 92, 88);}
+        ::-webkit-meter-optimum-value{background: green;}
+        ::-webkit-meter-suboptimum-value{background: gold;}
+        ::-webkit-meter-even-less-good-value{background: red;}
+        meter{
+            width: 100px;
+            height: 30px;
+        }
+        td{
+            border: 1px solid rgb(97, 10, 43);
+        }
+    </style>
+    -->
+</head>
+<body>
+    <!--
+         <table style="font-size: 30px; margin: 40px;">
+        <tr>
+            <td contenteditable="true">
+                bilel
+            </td>
+            <td>
+                <meter max="100" min="0" high="70" optimum="100" low="49" value="71" style="font-size: 30px;" ></meter>
+            </td>
+        </tr>
+    </table>
+    -->
+    <button type="button" style="margin: 30px;" onclick="open1()">ouvrire</button>
+    <dialog id="bil" style="width: 90%; height: 200px;" >
+        <fieldset style="border-radius: 15px; background-image: linear-gradient(to right,red,rgb(74, 16, 180)); height: 120px;">
+            <legend contenteditable="true " style="text-decoration:4px underline rgb(27, 17, 163) dotted; font-size: 25px; font-family: 'Homemade Apple', cursive;
+            ">bilel dhibi</legend>
+            <table>
+                <tr>
+                    <td>
+                        <a href="mailto:dhibibilel246@gmail.com" target="_blank"style="display: inline-block; text-align: center; text-decoration: none;
+                        font-size: 25px;color: chartreuse; cursor: pointer; ">dhibibilel246@gmail.com</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="tel:28797967" target="_blank" style="display: inline-block; text-align: center; text-decoration: none;
+                        font-size: 25px;color: chartreuse; cursor: pointer;">28797967</a>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <button type="button" onclick="open2()" style="margin-top: 20px;">Arrete</button>
+    </dialog>
+    <script>
+        function open1(){
+            document.getElementById("bil").setAttribute("open" , "true");
+        }
+        function open2(){
+            document.getElementById("bil").removeAttribute("open");
+        }
+    </script>
+   
+    
+</body>
+</html>
+<!--
+     <meta name="twitter:card" content="summary_largr_image">=صورة كبير
+-->

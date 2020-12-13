@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to left, rgb(38, 180, 45),rgb(175, 165, 165),rgb(206, 23, 145));
+}
+.bilel{
+    width: 35%;
+    height: 100%;
+    float: right;
+    line-height: 100px;
+    background-color: white;
+}
+[src="bilel1.jpg"]{
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+    border: dotted 5px violet;
+    cursor: pointer;
+    
+}
+[src="bilel1.jpg"]:hover{
+    transform: scale(1.5,1);
+    margin-left: 23px;
+}
+#h1{
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Josefin Slab', serif;
+   letter-spacing: 3px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height:80px ;
+    padding: 13px;
+    width: 100px;
+   
+    text-align: center;
+    
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a:hover{
+    background-color: rgb(206, 47, 127);
+    color: black;
+border: solid white 3px;
+cursor:grab;
+font-size: 25px;
+    width: 100%;
+    height:100% ;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+       padding-left: 10px;
+       padding-right: 10px;
+}
+main{
+    width: 100%;
+    height: 480px;
+    background-image: linear-gradient(to right, rgb(29, 31, 29),rgb(78, 144, 202));
+    border: double 5px white;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
+
+}
+main{
+    animation-name: bilel;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bilel{
+    0%{
+        background-image: linear-gradient(to left, rgb(46, 206, 46),rgb(170, 8, 130));
+    }
+    10%{
+        background-image: linear-gradient(to right, rgb(192, 223, 16),rgb(202, 78, 78));
+    }
+    50%{
+        background-image: linear-gradient(to left, rgb(189, 28, 28),rgb(168, 23, 132));
+    }
+    100%{
+        background-image: linear-gradient(to right, rgb(29, 31, 29),rgb(236, 12, 12));
+    }
+}
+aside{
+    width: 35%;
+    height: 98%;
+    background-image: linear-gradient(to left, rgb(245, 241, 241),rgb(90, 153, 204));
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    border: solid black 4px;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 50%;
+    border-radius: 20px;
+    border: dashed violet 4px;
+}
+aside img:hover{
+    animation-name: yama;
+    animation-duration: 7s;
+}
+@-webkit-keyframes yama{0%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}50%{-webkit-transform:translateY(-50%) rotateX(-90deg) scale(2);transform:translateY(-50%) rotateX(-90deg) scale(2);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}100%{-webkit-transform:translateY(-100%) rotateX(-180deg) scale(1);transform:translateY(-100%) rotateX(-180deg) scale(1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}@keyframes flip-scale-2-hor-top{0%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}50%{-webkit-transform:translateY(-50%) rotateX(-90deg) scale(2);transform:translateY(-50%) rotateX(-90deg) scale(2);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}100%{-webkit-transform:translateY(-100%) rotateX(-180deg) scale(1);transform:translateY(-100%) rotateX(-180deg) scale(1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}
+.yama{
+    padding: 20px;
+    border-bottom: solid violet 4px;
+    font-family: 'Reem Kufi', sans-serif;
+  text-shadow: 2px 3px firebrick;
+}
+#art{
+    width: 62%;
+    height: 98%;
+    float: right;
+    
+    position: relative;
+}
+.div{
+    width: 400px;
+    height: 190px;
+    position: absolute;
+    background-image: linear-gradient(to left, rgb(245, 241, 241),rgb(138, 18, 88));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 10px;
+    clip-path: polygon(50% 0%, 100% 18%, 100% 100%, 0 100%, 0 18%);
+    border: solid rgb(240, 237, 231) 1px;
+}
+.div h1{
+    border-bottom: groove 4px red;
+    padding: 15px 0px;
+}
+.div p{
+    font-family: 'Amiri', serif;
+    text-align: justify;
+    direction: rtl;
+}
+.div #icon{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+#icon a{
+    padding: 0px 10px;
+}
+#icon img{
+    border-bottom: groove 3px rgb(14, 79, 177);
+    padding-bottom: 2px;
+}
+#icon img:hover{
+    transform: scale(1.5,1);
+    border-bottom: rgb(186, 206, 4) groove 3px;
+    cursor: pointer;
+}
+
+/*
+@media all/*اريد ان انفاذ جميع اكوط على حميع شاشات{
+
+}
+@media print{
+    article{
+        display: none;/*  imprime من طباع articleمسح 
+    }
+}
+*/
+@media only screen and  (max-width:902px){
+    .bilel{
+        width: 50%;
+    }
+    aside{
+           width: 20%;
+    }
+    #art{
+         width: 78.7%;
+    }
+}
+@media only screen and (max-width:660px) {
+    #art{
+        width: 81%;
+   }
+   aside{
+    width: 16%;
+     }
+    
+}
+@media only screen and (max-width:520px){
+    header, main{
+        height: auto;
+        
+    }
+    aside{
+        width: 300px;
+        float: none;
+         }
+         aside img{
+            transform: translate(39%, 10%);
+         }
+         [src="bilel1.jpg"] ,#h1{
+             float: none;
+             font-size: 18px;
+
+         }
+         .bilel a{
+            text-decoration: none;
+         }
+         nav{
+             width: 100%;
+         }
+         #art{
+             clear: both;
+             float: none;
+            margin-top: 40px;
+            
+         }
+         .div{
+            top: 10%;
+            /* BOTTOM: 20%; */
+            left: 30%;
+            transform: translate(15%,10%);
+            width: 236px;
+            height: auto;
+            position: initial;
+         }
+         .yama{
+             padding-bottom: 1px;
+             
+         }
+}
+@media only screen and (max-width:300px){
+    nav ul li{
+        display: block;
+    }
+    .bilel{
+        float: none;
+        background-color: ivory;
+        text-align: center;
+    }
+    #h1{
+        letter-spacing: -3px;
+        word-spacing: -3;
+    }
+}
+@media only screen and (orientation:portrait)/*landscape,portrait*/{
+    .bilel{
+        background-image: linear-gradient(to left,rgb(218, 50, 148),rgb(35, 219, 158));
+    }
+    aside img{
+        border: solid rgb(53, 51, 51) 3px;
+        transform: translate(5%,10%);
+    }
+    [src="bilel1.jpg"]{
+        border: double rgb(48, 17, 121) 2px;
+    }
+    #h1{
+       color: rgb(35, 55, 73); 
+    }
+    #art{
+        margin-bottom: 40px;
+    }
+
+}
+@media print{
+    nav{
+        display: none;
+    }
+    
+
+}
+   
